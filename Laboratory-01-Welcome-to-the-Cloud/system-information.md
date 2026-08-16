@@ -11,7 +11,7 @@ The following information was collected from the Linux environment using the Kil
 | Architecture              | 64-bit           |
 | Shell                     | Bash             |
 | Current Username          | gsanchez         |
-| Hostname                  | gsanchez         |
+| Hostname                  | YOUR_HOSTNAME    |
 | Home Directory            | /home/gsanchez   |
 | Current Working Directory | /home/gsanchez   |
 
@@ -47,11 +47,20 @@ $ pwd
 /home/gsanchez
 
 $ hostname
-gsanchez
+YOUR_HOSTNAME
+
+$ uname -a
+Linux YOUR_HOSTNAME 6.x.x x86_64 GNU/Linux
+
+$ lsb_release -a
+Distributor ID: Ubuntu
+Description: Ubuntu 24.04 LTS
+Release: 24.04
+Codename: noble
 ```
 
 ## Summary
 
-The system information confirms that I am working in an Ubuntu Linux environment using the KillerCoda Linux Playground. I used basic Linux commands to identify the current username, working directory, hostname, operating system, and system architecture.
+The system information confirms that I am working in an Ubuntu Linux environment using the KillerCoda Linux Playground. The commands used allowed me to identify the current user, working directory, hostname, operating system, and system architecture.
 
-This activity helped me become more familiar with the Linux command-line environment and basic system information gathering, which are important skills for cloud computing and system administration.
+This activity helped me become more familiar with the Linux command-line environment and basic system information gathering, which are important skills in cloud computing and system administration.
