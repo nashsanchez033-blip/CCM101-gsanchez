@@ -1,4 +1,4 @@
-## About Me
+# About Me
 
 My name is Gymnashley Astorga Sanchez.
 I am student currently studying Information Technology.
