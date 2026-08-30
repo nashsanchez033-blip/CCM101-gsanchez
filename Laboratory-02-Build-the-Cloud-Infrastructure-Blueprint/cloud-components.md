@@ -2,103 +2,119 @@
 
 ## Checkpoint 3 – Identify Cloud Infrastructure Components
 
-This document identifies the cloud infrastructure components found in the Linux environment provided by KillerCoda. The components are based on the observations and system information gathered during the server investigation.
+Based on the investigation of the Linux cloud server in KillerCoda, the following cloud infrastructure components were identified.
 
 ---
 
 ## 1. Compute Resources
 
 ### Example
-**Intel Xeon E312xx (Sandy Bridge, IBRS update)**
-
-The Linux environment is provided with an Intel Xeon E312xx processor running at 2.0 GHz. The virtual server has 1 CPU core and 1 thread available.
+- **CPU:** Intel Xeon E312xx (Sandy Bridge, IBRS update)
+- **CPU Cores:** 1
+- **CPU Threads:** 1
+- **CPU Speed:** 2.0 GHz
+- **Architecture:** x86_64
+- **Virtualization:** KVM
 
 ### Purpose
 
-Compute resources provide the processing power needed to run applications, execute Linux commands, manage services, and perform tasks on the cloud server.
+Compute resources provide the processing power needed to run applications, execute commands, process data, and perform tasks on the cloud server.
 
 ### Importance in Cloud Computing
 
-Compute resources are one of the main components of cloud computing because they allow users to run applications and workloads without needing to own and maintain physical servers. Cloud platforms can allocate CPU resources depending on the requirements of the workload.
+Compute resources are important because cloud applications and services require processing power to operate. CPU resources allow servers to execute programs, handle requests, and perform different workloads. Cloud environments can provide virtualized CPU resources based on the requirements of the workload.
 
 ### Relation to the KillerCoda Linux Environment
 
-The KillerCoda environment provides a virtual Linux server with 1 CPU core. The CPU information was identified using the `lscpu` command.
+The KillerCoda environment provides a virtual cloud server with an Intel Xeon E312xx processor and 1 CPU core. According to the investigation, the system is running under KVM full virtualization. The CPU and virtualization information was identified using the `lscpu` command.
 
 ---
 
 ## 2. Storage Resources
 
 ### Example
-**/dev/vda1 – 19 GiB**
-
-The main storage device of the Linux environment is `/dev/vda1`, which has a total capacity of 19 GiB. Approximately 5.4 GiB is used and 13 GiB is available.
-
-Other storage partitions found include:
-
-- `/dev/vda16` – 881 MiB mounted on `/boot`
-- `/dev/vda15` – 105 MiB mounted on `/boot/efi`
+- **Main Disk:** 19 GiB
+- **Used Storage:** 5.4 GiB
+- **Available Storage:** 13 GiB
+- **Boot Partition:** 881 MiB
+- **EFI Partition:** 105 MiB
+- **Main Mount Point:** `/`
 
 ### Purpose
 
-Storage resources are used to store the operating system, applications, configuration files, user files, and other data required by the server.
+Storage resources are used to store the operating system, applications, configuration files, user files, logs, and other data required by the cloud server.
 
 ### Importance in Cloud Computing
 
-Storage is important in cloud computing because applications and operating systems need a place to store data. Cloud storage allows data to remain available to applications and users while providing scalable and manageable storage resources.
+Storage is important because cloud servers need persistent space for operating system files, applications, databases, logs, and other information. Sufficient storage allows applications and services to operate properly and provides space for storing important data.
 
 ### Relation to the KillerCoda Linux Environment
 
-The KillerCoda server provides a virtual disk that is represented by `/dev/vda1`. The disk capacity and usage were identified using the `df -h` command.
+The KillerCoda server has a 19 GiB main disk represented by `/dev/vda1` and mounted at `/`. The investigation also identified a `/boot` partition using `/dev/vda16` with a size of 881 MiB and an EFI partition using `/dev/vda15` with a size of 105 MiB. The `df -h` command was used to inspect the storage capacity and mounted file systems.
 
 ---
 
 ## 3. Networking Resources
 
 ### Example
-**enp1s0 Network Interface – 172.30.1.2**
-
-The primary network interface found in the Linux environment is `enp1s0`. It is assigned the IP address `172.30.1.2`.
-
-A Docker bridge interface was also found:
-
-- **Interface:** docker0
-- **IP Address:** 172.17.0.1
+- **Hostname:** ubuntu
+- **Primary Network Interface:** enp1s0
+- **Primary IP Address:** 172.30.1.2
+- **Docker Network Interface:** docker0
+- **Docker IP Address:** 172.17.0.1
+- **Loopback Address:** 127.0.0.1
 
 ### Purpose
 
-Networking resources allow the cloud server to communicate with other systems, services, and networks. Network interfaces and IP addresses are used to identify and connect the server within a network.
+Networking resources allow the cloud server to communicate with other systems, services, applications, and networks. Network interfaces and IP addresses provide the connectivity needed for data to move between systems.
 
 ### Importance in Cloud Computing
 
-Networking is essential in cloud computing because cloud servers need to communicate with users, applications, databases, and other cloud resources. Proper networking enables connectivity, service access, and communication between different systems.
+Networking is important because cloud servers need to communicate with users, applications, databases, and other cloud resources. Network interfaces and IP addresses allow services to communicate within a network and enable cloud resources to interact with each other.
 
 ### Relation to the KillerCoda Linux Environment
 
-The KillerCoda Linux environment uses the `enp1s0` interface for its primary network connection. The IP address `172.30.1.2` was identified using the `ip a` and `hostname -I` commands. The environment also contains a Docker bridge network with the IP address `172.17.0.1`.
+The KillerCoda Linux server uses the `enp1s0` network interface as its primary network interface. It has the IP address `172.30.1.2`. The investigation also identified the `docker0` interface with the IP address `172.17.0.1`, which is used as a Docker bridge network. The loopback interface uses `127.0.0.1`.
+
+The networking information was identified using the `ip a`, `hostname`, and `hostname -I` commands.
 
 ---
 
 ## 4. Operating System
 
 ### Example
-**Ubuntu 24.04.4 LTS (Noble Numbat)**
-
-The cloud server is running Ubuntu 24.04.4 LTS, also known as Noble Numbat. The system uses the Linux kernel version `6.8.0-138-generic` and an x86_64 architecture.
+- **Operating System:** Ubuntu 24.04.4 LTS
+- **Codename:** Noble Numbat
+- **Kernel:** 6.8.0-138-generic
+- **Architecture:** x86_64
 
 ### Purpose
 
-The operating system manages the computer's hardware and software resources. It provides the environment where applications, commands, services, and other processes can run.
+The operating system manages the server's hardware and software resources. It provides the environment needed to run applications, execute commands, manage files, configure networking, and control system processes.
 
 ### Importance in Cloud Computing
 
-The operating system is important in cloud computing because it provides the software environment needed to operate and manage virtual servers. It allows administrators and users to interact with computing, storage, networking, and application resources.
+The operating system is important because cloud applications and services need an operating environment where they can run. It manages CPU, memory, storage, networking, users, processes, and other system resources.
 
 ### Relation to the KillerCoda Linux Environment
 
-KillerCoda provides an Ubuntu 24.04.4 LTS Linux environment that can be accessed through a terminal. The operating system information was identified using the following commands:
+The KillerCoda cloud server runs Ubuntu 24.04.4 LTS, also known as Noble Numbat. The system uses the 6.8.0-138-generic Linux kernel and an x86_64 architecture. The operating system information was identified using the `cat /etc/os-release`, `uname -r`, and `uname -a` commands.
 
-```bash
-cat /etc/os-release
-uname -r
-uname -a
+---
+
+## Summary
+
+| Cloud Component | KillerCoda Example | Purpose |
+|---|---|---|
+| Compute Resources | Intel Xeon E312xx, 1 CPU Core | Provides processing power |
+| Storage Resources | 19 GiB Main Disk | Stores the OS, applications, and data |
+| Networking Resources | 172.30.1.2, enp1s0 | Provides network communication |
+| Operating System | Ubuntu 24.04.4 LTS | Manages hardware and software resources |
+
+---
+
+## Conclusion
+
+The investigation of the KillerCoda Linux environment demonstrates the main components of cloud infrastructure. The server uses compute resources through an Intel Xeon E312xx processor with 1 CPU core, storage resources through a 19 GiB main disk, networking resources through the `enp1s0` network interface and IP address `172.30.1.2`, and Ubuntu 24.04.4 LTS as its operating system.
+
+The investigation also confirmed that the cloud environment is running under KVM full virtualization. These components work together to provide a functional virtual cloud computing environment where applications, commands, and services can run.
