@@ -1,132 +1,197 @@
 # CCM101 – Cloud Computing Laboratory
 
-## Technical Documentation
+## Laboratory 01 – Welcome to the Cloud
 
-This README documents the activities, observations, and skills developed while investigating and working with a Linux-based cloud environment using KillerCoda.
+> **Cloud Infrastructure Investigation and Documentation**
+>
+> A hands-on exploration of a Linux-based virtual cloud environment using KillerCoda.
 
 ---
 
-# Mission Overview
+## Mission Overview
 
-This laboratory activity introduced the basic concepts and practical aspects of cloud infrastructure. The activities involved accessing a Linux cloud server, investigating its system resources, identifying important cloud infrastructure components, researching major cloud providers, and designing a simple cloud architecture.
+This laboratory activity served as an introduction to working with cloud infrastructure through a Linux-based virtual server. Instead of only studying cloud computing concepts theoretically, the activity provided an opportunity to investigate an actual running environment and identify the resources available to it.
 
-The laboratory used the KillerCoda Linux environment to provide hands-on experience with a virtualized cloud server. Through the different checkpoints, the server's operating system, compute resources, memory, storage, networking configuration, and virtualization environment were examined and documented.
+The laboratory started with accessing a Linux cloud server through KillerCoda and continued with system investigation, infrastructure identification, cloud provider comparison, and basic cloud architecture design.
 
-The activity also introduced Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP) and compared their equivalent infrastructure services.
+During the investigation, the server was identified as an **Ubuntu 24.04.4 LTS** environment running on **KVM virtualization**. The available compute, memory, storage, and networking resources were examined using Linux command-line tools.
+
+The activities helped connect theoretical cloud computing concepts with the actual components found inside a virtual cloud environment.
 
 ---
 
 # Objectives
 
-The main objectives of this laboratory activity were:
+The laboratory was completed with the following objectives:
 
-- Understand the basic concepts of cloud computing infrastructure.
-- Access and investigate a Linux-based cloud environment.
-- Identify the operating system and Linux kernel version.
-- Examine CPU, memory, storage, and networking resources.
-- Identify examples of compute, storage, networking, and operating system components.
-- Compare equivalent services offered by AWS, Microsoft Azure, and Google Cloud.
-- Understand how different cloud infrastructure components work together.
-- Create a simple cloud infrastructure architecture diagram.
-- Practice documenting technical information using Markdown.
-- Develop basic Linux command-line and cloud infrastructure skills.
+- Access and navigate a Linux-based cloud environment.
+- Create and manage files and directories using Linux commands.
+- Investigate the operating system and Linux kernel.
+- Identify the available CPU and memory resources.
+- Examine disk capacity and mounted file systems.
+- Identify the hostname, network interfaces, and IP addresses.
+- Recognize compute, storage, networking, and operating system components.
+- Compare equivalent infrastructure services from AWS, Microsoft Azure, and Google Cloud.
+- Design a simple cloud infrastructure for a fictional company.
+- Practice writing technical documentation using Markdown.
+- Develop basic skills required for cloud infrastructure and system administration.
 
 ---
 
 # Cloud Infrastructure Components
 
-The following major cloud infrastructure components were identified during the laboratory activities.
+The investigation of the KillerCoda server revealed several important cloud infrastructure components.
 
-## 1. Compute Resources
+## 1. Compute Resource
 
-The KillerCoda server uses an **Intel Xeon E312xx** processor with **1 CPU core and 1 thread**. The CPU information also showed that the environment is running under **KVM full virtualization**.
+The virtual server is equipped with an:
 
-Compute resources provide the processing power required to execute commands, run applications, and handle workloads on a cloud server.
+**Intel Xeon E312xx (Sandy Bridge, IBRS update)**
 
----
+The investigation showed:
 
-## 2. Storage Resources
+- CPU Cores: **1**
+- Threads: **1**
+- Architecture: **x86_64**
+- CPU Speed: **2.0 GHz**
+- Hypervisor: **KVM**
+- Virtualization Type: **Full**
 
-The main storage device identified was **`/dev/vda1`**, with a capacity of approximately **19 GiB**.
-
-The investigation also identified:
-
-- `/dev/vda16` – 881 MiB mounted on `/boot`
-- `/dev/vda15` – 105 MiB mounted on `/boot/efi`
-
-Storage resources are responsible for keeping the operating system, applications, configuration files, and other data.
+The compute resource provides the processing power required to execute commands, run applications, and perform workloads on the virtual server.
 
 ---
 
-## 3. Networking Resources
+## 2. Memory Resource
 
-The primary network interface identified was **`enp1s0`**, which was assigned the IP address:
+The server has:
 
-`172.30.1.2`
+- Total RAM: **1.9 GiB**
+- Used RAM: **418 MiB**
+- Free RAM: **822 MiB**
+- Available RAM: **1.4 GiB**
+- Swap: **1.0 GiB**
 
-The investigation also identified a Docker bridge interface:
-
-`docker0` – `172.17.0.1`
-
-The hostname of the server was:
-
-`ubuntu`
-
-Networking resources allow the cloud server to communicate with other systems and services.
+Memory allows the operating system and applications to temporarily store information while processes are running.
 
 ---
 
-## 4. Operating System
+## 3. Storage Resource
 
-The server is running:
+The primary storage device is:
 
-**Ubuntu 24.04.4 LTS (Noble Numbat)**
+**`/dev/vda1` – 19 GiB**
 
-The system uses:
+Storage information from the investigation:
 
-- **Kernel:** 6.8.0-138-generic
-- **Architecture:** x86_64
+| Storage | Capacity | Used | Available | Mount Point |
+|---|---:|---:|---:|---|
+| `/dev/vda1` | 19 GiB | 5.4 GiB | 13 GiB | `/` |
+| `/dev/vda16` | 881 MiB | 117 MiB | 703 MiB | `/boot` |
+| `/dev/vda15` | 105 MiB | 6.2 MiB | 99 MiB | `/boot/efi` |
 
-The operating system manages the server's hardware and software resources and provides the environment where applications, commands, and services can operate.
-
----
-
-# Tools Used
-
-The following tools were used during the laboratory activity:
-
-### KillerCoda
-
-KillerCoda was used to provide the Linux-based cloud server environment. It allowed the investigation and execution of Linux commands through a terminal.
-
-### Linux Terminal
-
-The terminal was used to inspect the operating system, CPU, memory, storage, hostname, network interfaces, and IP addresses.
-
-### GitHub
-
-GitHub was used to store and organize the laboratory documentation and related files in a cloud-based repository.
-
-### Draw.io
-
-Draw.io was used to design the simple cloud infrastructure architecture diagram created during the laboratory activity.
-
-### Markdown
-
-Markdown was used to create and format the technical documentation files such as:
-
-- `README.md`
-- `infrastructure-report.md`
-- `cloud-components.md`
-- `cloud-provider-comparison.md`
+Storage is responsible for keeping the operating system, applications, configuration files, and other server data.
 
 ---
 
-# Linux Commands Executed
+## 4. Networking Resource
 
-The following Linux commands were executed during the investigation.
+The primary network interface identified during the investigation was:
 
-## System Information
+**Interface:** `enp1s0`  
+**Primary IP Address:** `172.30.1.2`
 
-```bash
-uname -a
+The server also contained:
+
+| Interface | Address | Purpose |
+|---|---|---|
+| `enp1s0` | `172.30.1.2` | Primary network interface |
+| `docker0` | `172.17.0.1` | Docker bridge network |
+| `lo` | `127.0.0.1` | Local loopback interface |
+
+The server hostname is:
+
+**`ubuntu`**
+
+Networking resources allow the cloud server to communicate with other systems, services, and networks.
+
+---
+
+## 5. Operating System
+
+The cloud server runs:
+
+**Ubuntu 24.04.4 LTS – Noble Numbat**
+
+System details:
+
+- Kernel: **6.8.0-138-generic**
+- Architecture: **x86_64**
+- Distribution: **Ubuntu**
+- Version: **24.04.4 LTS**
+
+The operating system manages the server's hardware and software resources and provides the environment where applications and services operate.
+
+---
+
+# Cloud Provider Comparison
+
+During the laboratory, three major public cloud providers were examined:
+
+- Amazon Web Services (AWS)
+- Microsoft Azure
+- Google Cloud Platform (GCP)
+
+Although the providers use different product names, many of their services perform similar infrastructure functions.
+
+| Infrastructure | AWS | Microsoft Azure | Google Cloud |
+|---|---|---|---|
+| **Compute** | Amazon EC2 | Azure Virtual Machines | Compute Engine |
+| **Storage** | Amazon S3 | Azure Blob Storage | Cloud Storage |
+| **Networking** | Amazon VPC | Azure Virtual Network | Google Cloud VPC |
+| **IAM** | AWS IAM | Microsoft Entra ID + Azure RBAC | Google Cloud IAM |
+
+### Key Observation
+
+The biggest lesson from the comparison is that cloud providers may use different terminology for similar technologies.
+
+For example:
+
+> **Virtual Machine → EC2 → Azure VM → Compute Engine**
+
+The product names change, but the basic concept remains the same: providing virtual computing resources that can run applications and workloads.
+
+---
+
+# Simple Cloud Architecture
+
+A simple cloud infrastructure was designed for a fictional company named **TechNova Solutions**.
+
+The architecture contains the following major components:
+
+```text
+                         INTERNET
+                             |
+                             |
+                     Internet Connection
+                             |
+                             v
+                    +----------------+
+                    |      VPC       |
+                    |  Virtual Cloud |
+                    +-------+--------+
+                            |
+                     Public Subnet
+                            |
+             +--------------+--------------+
+             |                             |
+             v                             v
+      +-------------+              +---------------+
+      |   COMPUTE   |              |    STORAGE    |
+      |   INSTANCE  |<------------>|  Object Data  |
+      | Ubuntu 24.04|              |     / Files   |
+      +------+------+              +---------------+
+             |
+             |
+             v
+           USER
+      Web Application
