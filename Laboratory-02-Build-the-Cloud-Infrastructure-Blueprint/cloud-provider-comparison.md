@@ -1,6 +1,6 @@
 # Cloud Provider Comparison
 
-## Checkpoint 4 – Research the Major Cloud Providers
+## Research the Major Cloud Providers
 
 ### Overview
 
