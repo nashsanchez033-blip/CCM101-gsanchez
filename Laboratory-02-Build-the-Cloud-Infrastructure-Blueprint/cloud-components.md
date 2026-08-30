@@ -1,6 +1,6 @@
 # Cloud Infrastructure Components
 
-## Checkpoint 3 – Identify Cloud Infrastructure Components
+##  Identify Cloud Infrastructure Components
 
 Based on the investigation of the Linux cloud server in KillerCoda, the following cloud infrastructure components were identified.
 
