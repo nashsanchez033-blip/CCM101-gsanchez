@@ -1,6 +1,6 @@
 # CCM101 – Cloud Computing Laboratory
 
-# Laboratory 01 – Welcome to the Cloud
+#  Welcome to the Cloud
 
 ## Mission Overview
 
