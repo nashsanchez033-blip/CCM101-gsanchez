@@ -1,5 +1,7 @@
 # Mission Reflection
 
+
+
 The cloud platform that impressed me the most was **AWS** because of its wide range of services and the number of different workloads that can be supported. During the activity, I learned that AWS can support simple applications as well as large enterprise systems through services for computing, storage, databases, networking, security, and containers. However, I also learned that Azure and Google Cloud have important strengths that can make them better choices for specific situations.
 
 AWS, Azure, and GCP have many similarities. All three provide virtual machines, object storage, databases, networking, identity and access management, Kubernetes, monitoring, security, and tools for automation. They also use a similar cloud model where organizations can provision resources when needed and scale their infrastructure according to workload requirements. Even though the service names and interfaces are different, many of the basic cloud concepts are similar.
