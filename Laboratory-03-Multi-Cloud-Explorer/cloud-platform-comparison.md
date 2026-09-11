@@ -1,5 +1,6 @@
 # Cloud Platform Comparison
 
+
 ## 1. Major Cloud Platform Comparison
 
 | Category | AWS | Microsoft Azure | Google Cloud Platform |
