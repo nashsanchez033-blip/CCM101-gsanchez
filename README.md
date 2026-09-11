@@ -1,115 +1,148 @@
-# CCM101 - Cloud Computing Portfolio
+# Laboratory 03 – Multi-Cloud Explorer
 
-## About Me
+## Mission Overview
 
-My name is **Gymnashley Sanchez**, and I am an Information Technology student. I am currently developing my knowledge and skills in Cloud Computing, Linux, networking, system administration, and other technologies related to IT infrastructure.
+CloudNova Technologies has assigned the Cloud Evaluation Team to evaluate three major public cloud platforms: Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP). The goal of this laboratory activity is to research their services, compare their capabilities, and recommend the most suitable provider for different business requirements.
 
-I am interested in learning how computer systems, servers, and cloud technologies work. Through hands-on laboratory activities, I aim to improve my technical skills and gain practical experience that I can apply to future IT projects and professional work.
+This laboratory continues my Cloud Computing GitHub Portfolio by adding a multi-cloud evaluation and decision-making activity.
 
-## About This Repository
+## Mission Objectives
 
-This repository serves as my personal **Cloud Computing Portfolio for CCM101**. It contains my laboratory activities, technical documentation, screenshots, reflections, and other outputs completed throughout the semester.
+- Explore AWS, Microsoft Azure, and Google Cloud Platform.
+- Identify important services offered by each provider.
+- Compare equivalent cloud services.
+- Analyze business requirements and recommend a suitable provider.
+- Practice professional technical documentation using Markdown.
+- Continue improving my GitHub Cloud Computing Portfolio.
 
-The repository will be continuously updated as I complete new laboratory activities and learn additional concepts related to Cloud Computing and IT infrastructure.
+## Repository Structure
 
-## Course Overview
+```text
+Laboratory-03-Multi-Cloud-Explorer/
+│
+├── README.md
+├── aws-research.md
+├── azure-research.md
+├── gcp-research.md
+├── cloud-platform-comparison.md
+├── client-recommendations.md
+├── reflection.md
+└── screenshots/
+    ├── aws-homepage.png
+    ├── azure-homepage.png
+    ├── gcp-homepage.png
+    ├── killercoda-terminal.png
+    └── github-repository.png
+```
 
-**CCM101 - Cloud Computing** introduces the fundamental concepts, technologies, and practical applications of cloud computing.
+> **Note:** The screenshot files are evidence that must be captured by the student. Add the actual screenshots to the `screenshots` folder before submitting.
 
-Throughout this course, I will explore different topics related to:
+## Checkpoint 1 – Expand Your Cloud Portfolio
 
-* Cloud computing fundamentals
-* Linux operating systems
-* Cloud infrastructure
-* Virtualization
-* Servers and system administration
-* Networking fundamentals
-* Cloud-based environments
-* Git and GitHub
-* Technical documentation
-* Basic cloud services and technologies
+The folder `Laboratory-03-Multi-Cloud-Explorer` was created inside the existing Cloud Computing Portfolio repository. The required Markdown files and screenshots folder are included in this laboratory.
 
-## Tools and Technologies
+## Checkpoint 2 – Explore the Three Cloud Platforms
 
-The following tools and technologies are used in my laboratory activities:
+The following research files contain information about the three major cloud providers:
 
-* **Linux / Ubuntu**
-* **KillerCoda Linux Playground**
-* **Bash Terminal**
-* **Git**
-* **GitHub**
-* **Markdown**
-* **Cloud Computing Technologies**
+- [AWS Research](aws-research.md)
+- [Azure Research](azure-research.md)
+- [GCP Research](gcp-research.md)
 
-## Laboratory Activities
+Each research file includes an overview, global infrastructure, management console, four core services, advantages, enterprise use cases, and official sources.
 
-### Laboratory 01 - Welcome to the Cloud
+## Checkpoint 3 – Compare the Major Cloud Platforms
 
-This laboratory introduces the basic concepts and practical skills needed to work in a Linux-based cloud environment.
+The three platforms are compared by launch year, compute, storage, networking, identity, strengths, and ideal organizations in [cloud-platform-comparison.md](cloud-platform-comparison.md).
 
-The activities include accessing the KillerCoda Linux Playground, creating and managing a Linux user, navigating the Linux file system, gathering system information, creating files and directories, and documenting the activities using Markdown and GitHub.
+## Checkpoint 4 – Cloud Platform Recommendation Challenge
 
-This laboratory provides the foundation for understanding Linux environments and their importance in Cloud Computing.
+Four business scenarios are analyzed in [client-recommendations.md](client-recommendations.md):
 
-### Laboratory Progress
+- Startup Company
+- University
+- AI Research Company
+- Global E-Commerce Company
 
-| Laboratory    | Title                | Status    |
-| ------------- | -------------------- | --------- |
-| Laboratory 01 | Welcome to the Cloud | Completed |
-| Laboratory 02 | To be added          | Pending   |
-| Laboratory 03 | To be added          | Pending   |
-| Laboratory 04 | To be added          | Pending   |
+## Checkpoint 5 – Match the Cloud Services
 
-More laboratory activities will be added as the semester progresses.
+Equivalent services for virtual machines, object storage, identity management, SQL databases, and Kubernetes are listed in [cloud-platform-comparison.md](cloud-platform-comparison.md).
 
-## Skills Being Developed
+## Checkpoint 6 – Multi-Cloud Decision Matrix
 
-Through this portfolio, I am developing the following skills:
+A decision matrix for common business requirements is included in [client-recommendations.md](client-recommendations.md).
 
-* Linux command-line navigation
-* Linux user and file management
-* Basic system administration
-* System information gathering
-* File and directory organization
-* Bash command usage
-* Git and GitHub version control
-* Markdown documentation
-* Cloud computing fundamentals
-* Technical problem-solving
+## Checkpoint 7 – Continue Your Linux Investigation
 
-## Learning Goals
+### Linux Commands Used
 
-My goals for this course are to:
+The following commands can be used in KillerCoda to collect the required information:
 
-1. Understand the fundamental concepts of Cloud Computing.
-2. Become more comfortable working with Linux.
-3. Improve my command-line skills.
-4. Understand the basic components of cloud infrastructure.
-5. Learn how to manage files, users, and system resources.
-6. Develop proper technical documentation skills.
-7. Learn how to use Git and GitHub effectively.
-8. Build a professional technical portfolio.
-9. Gain practical knowledge that can be applied to future IT projects.
+```bash
+cat /etc/os-release
+uname -a
+lscpu
+free -h
+df -h
+```
 
-## Portfolio Purpose
+### System Information
 
-This portfolio serves as a record of my learning journey throughout the CCM101 course. It documents the activities I have completed, the challenges I have encountered, and the skills I have developed.
+Replace the placeholders below with the actual output from the KillerCoda Playground.
 
-Each laboratory activity will contribute to my understanding of Cloud Computing and help me build practical experience in working with Linux and cloud-based environments.
+| Information | Result |
+|---|---|
+| Operating System | `[Enter actual KillerCoda OS]` |
+| Kernel | `[Enter actual kernel version]` |
+| CPU | `[Enter actual CPU information]` |
+| Memory | `[Enter actual memory information]` |
+| Disk Space | `[Enter actual disk information]` |
 
-## Learning Journey
+### Possible Cloud Services for the Linux Server
 
-I believe that learning technology requires continuous practice, patience, and willingness to solve problems. Some concepts may be challenging at first, but every laboratory activity provides an opportunity to improve my technical skills.
+| Provider | Service |
+|---|---|
+| AWS | Amazon EC2 |
+| Microsoft Azure | Azure Virtual Machines |
+| Google Cloud | Compute Engine |
 
-Through this portfolio, I will track my progress and continue developing my knowledge as I move forward in the course.
+All three platforms can host Linux virtual machines. The exact service size and configuration should be selected based on the server's CPU, memory, storage, networking, availability, and workload requirements.
 
-## Author
+### Screenshot Evidence
 
-**Gymnashley Sanchez**
+Add the KillerCoda terminal screenshot as:
 
-Information Technology Student
-**CCM101 - Cloud Computing**
+`/screenshots/killercoda-terminal.png`
 
----
+## Checkpoint 8 – Mission Reflection
 
-*This portfolio will be continuously updated throughout the semester as new laboratory activities and learning experiences are completed.*
+My reflection about the multi-cloud investigation is available in [reflection.md](reflection.md).
+
+## Evidence Checklist
+
+Before submitting, make sure these screenshots are inside the `screenshots` folder:
+
+- `aws-homepage.png`
+- `azure-homepage.png`
+- `gcp-homepage.png`
+- `killercoda-terminal.png`
+- `github-repository.png`
+
+## Commit and Push
+
+After completing the laboratory and adding the actual screenshots, commit and push the changes:
+
+```bash
+git add Laboratory-03-Multi-Cloud-Explorer
+git commit -m "Complete Laboratory 03 Multi-Cloud Explorer"
+git push
+```
+
+## Official Sources
+
+- AWS: https://aws.amazon.com/
+- AWS Documentation: https://docs.aws.amazon.com/
+- Microsoft Azure: https://azure.microsoft.com/
+- Microsoft Learn: https://learn.microsoft.com/azure/
+- Google Cloud: https://cloud.google.com/
+- Google Cloud Documentation: https://cloud.google.com/docs/
