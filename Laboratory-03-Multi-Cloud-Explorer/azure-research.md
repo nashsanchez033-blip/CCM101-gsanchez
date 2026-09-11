@@ -1,5 +1,6 @@
 # Microsoft Azure Research
 
+
 ## 1. Brief Overview
 
 Microsoft Azure is Microsoft's public cloud platform for building, deploying, and managing applications and infrastructure. Azure launched in 2010 and provides services for computing, storage, networking, databases, identity, security, analytics, AI, and containers.
