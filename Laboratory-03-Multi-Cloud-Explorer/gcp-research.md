@@ -1,5 +1,7 @@
 # Google Cloud Platform Research
 
+
+
 ## 1. Brief Overview
 
 Google Cloud Platform (GCP), now commonly presented as Google Cloud, is Google's public cloud platform. It provides infrastructure, storage, databases, networking, analytics, artificial intelligence, machine learning, containers, and developer services.
