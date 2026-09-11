@@ -1,71 +1,41 @@
 # AWS Research
 
-## 1. Brief Overview
+## Brief Overview
 
-Amazon Web Services (AWS) is a public cloud platform from Amazon that provides computing, storage, databases, networking, security, analytics, AI/ML, and many other services. AWS launched in 2006 and has grown into one of the largest cloud ecosystems.
+Amazon Web Services (AWS) is a cloud computing platform from Amazon. It provides different cloud services that people and businesses can use to store data, run applications, build systems, and manage their resources online.
 
-AWS is designed for startups, enterprises, government organizations, developers, and many other types of users. Its large service portfolio gives organizations many choices when designing cloud solutions.
+## Global Infrastructure
 
-## 2. Global Infrastructure
+AWS has a large global infrastructure with Regions, Availability Zones, and data centers located in different parts of the world. Regions are geographic areas where AWS provides its services, while Availability Zones are separate locations within a Region. These help AWS provide reliable and available services to users in different locations.
 
-AWS organizes its infrastructure into geographic **Regions** and **Availability Zones (AZs)**. A Region is a separate geographic area, while Availability Zones are isolated locations within a Region. AWS states that its global infrastructure includes multiple Regions and Availability Zones, allowing applications to be designed for high availability and fault tolerance.
+## Cloud Management Console
 
-AWS also provides services such as Local Zones and Wavelength Zones for workloads that need lower latency closer to end users.
+The AWS Management Console is a website where users can access and manage different AWS services. Through the console, users can create resources, check their services, manage their account settings, and monitor their cloud resources.
 
-## 3. Cloud Management Console
+**Official Website:** https://aws.amazon.com/
 
-The **AWS Management Console** is a web-based interface used to create, configure, monitor, and manage AWS resources. Instead of using only command-line tools, users can access services such as EC2, S3, RDS, IAM, and many others through the browser.
+## Four (4) Core Services
 
-## 4. Four Core Services
+1. **Amazon EC2** – A service that provides virtual servers for running applications and other workloads.
 
-### Amazon EC2
+2. **Amazon S3** – A storage service that can be used to store files, images, documents, backups, and other data.
 
-Amazon Elastic Compute Cloud (EC2) provides resizable virtual computing capacity. It supports different instance types for general-purpose, compute-intensive, memory-intensive, storage-intensive, and accelerated workloads.
+3. **Amazon RDS** – A service that makes it easier to set up and manage relational databases.
 
-### Amazon S3
+4. **AWS Lambda** – A service that lets users run code without having to manage servers.
 
-Amazon Simple Storage Service (S3) is an object storage service. Data is stored as objects inside buckets and can be used for application files, backups, media, logs, archives, and data analytics.
+## Three (3) Advantages
 
-### Amazon RDS
+1. **Scalability** – AWS resources can be adjusted depending on how much a business needs.
 
-Amazon Relational Database Service (RDS) is a managed relational database service. It supports database engines such as MySQL, PostgreSQL, SQL Server, Oracle, MariaDB, and Db2.
+2. **Reliability** – AWS has different locations around the world, which helps keep services and data available.
 
-### AWS IAM
+3. **Many Services Available** – AWS offers many services for computing, storage, databases, networking, security, and other cloud needs.
 
-AWS Identity and Access Management (IAM) controls access to AWS resources. It can be used to manage users, roles, permissions, and access policies.
+## Typical Enterprise Use Cases
 
-## 5. Three Advantages
-
-1. **Broad service selection** – AWS provides a very large range of cloud services.
-2. **Global infrastructure** – Multiple Regions and Availability Zones support global applications and high availability.
-3. **Scalability** – AWS services can scale resources according to workload requirements.
-
-## 6. Typical Enterprise Use Cases
-
-AWS is commonly suitable for:
-
-- Web and mobile applications
-- E-commerce platforms
-- Backup and disaster recovery
-- Enterprise databases
-- Data analytics
-- Machine learning workloads
-- Containerized and microservice applications
-- Global applications requiring high availability
-
-## 7. Official Sources
-
-- AWS Origins: https://aws.amazon.com/about-aws/our-origins/
-- AWS Global Infrastructure: https://aws.amazon.com/about-aws/global-infrastructure/
-- AWS Regions and Availability Zones: https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions-availability-zones.html
-- Amazon EC2: https://aws.amazon.com/ec2/
-- Amazon S3: https://aws.amazon.com/s3/
-- Amazon RDS: https://aws.amazon.com/rds/
-- AWS IAM: https://aws.amazon.com/iam/
-- AWS Management Console: https://aws.amazon.com/console/
+Businesses use AWS for hosting websites and applications, storing and backing up data, managing databases, developing software, and analyzing data. It can also help businesses increase their resources when more users or workloads need to be handled.
 
 ## Screenshot Evidence
 
-Add the official AWS homepage or AWS Management Console screenshot as:
-
-`/screenshots/aws-homepage.png`
+![AWS Homepage](screenshots/aws-homepage.png)
