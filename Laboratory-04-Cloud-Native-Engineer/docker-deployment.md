@@ -1,6 +1,6 @@
 # Docker Deployment
 
-## Checkpoint 3 - Docker Environment
+Docker Environment
 
 ### Check Docker Version
 
