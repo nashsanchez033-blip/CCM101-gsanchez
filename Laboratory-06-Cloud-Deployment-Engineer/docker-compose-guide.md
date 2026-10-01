@@ -18,3 +18,14 @@ The Compose file contains:
 
 ```yaml
 MYSQL_HOST=database
+
+---
+
+## Difference Between `docker run` and `docker-compose up -d`
+
+The `docker run` command is normally used to create and start an individual Docker container. The user needs to specify the image, ports, environment variables, and other options directly in the terminal.
+
+For example:
+
+```bash
+docker run -d -p 8080:80 nextcloud
