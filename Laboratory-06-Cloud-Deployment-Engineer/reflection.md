@@ -1,0 +1,11 @@
+# Mission Reflection
+
+Writing a `docker-compose.yml` file makes a cloud engineer's job easier because it allows multiple services to be defined and configured in one file. Instead of manually typing several Docker commands and remembering every option, an engineer can use Docker Compose to deploy the complete application stack consistently. This is especially useful when an application has several containers that need to communicate with each other.
+
+YAML indentation is very important because YAML uses spaces to define the structure of the configuration. If I make an indentation error or use a Tab instead of spaces, Docker Compose may fail to read the file correctly and return a configuration or parsing error. This shows that even a small formatting mistake can prevent an entire deployment from starting.
+
+Environment variables such as `MYSQL_PASSWORD`, `MYSQL_DATABASE`, and `MYSQL_USER` were used to provide configuration information to the containers. They allow the application and database to use the required settings without hard-coding configuration directly into the application. In this activity, the environment variables also helped the Nextcloud container know how to connect to the MariaDB database.
+
+Deploying Nextcloud in only a few minutes was an interesting experience because it showed how powerful containerization can be. Instead of manually installing and configuring every component, Docker downloaded the required images and created the services based on the Compose file. Seeing the Nextcloud setup page appear after starting the containers made the concept of cloud deployment more practical and understandable.
+
+Since Mission 1, my understanding of Cloud Computing has evolved from simply understanding basic cloud concepts to actually working with cloud infrastructure and deployment tools. I now understand better how containers, services, networking, configuration, and automation work together. This mission also showed me why automation and infrastructure-as-code are important skills for cloud engineers. Instead of treating infrastructure as a collection of manual commands, I can now see it as something that can be defined, documented, repeated, and managed through code.
