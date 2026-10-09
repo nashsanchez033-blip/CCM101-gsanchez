@@ -12,9 +12,10 @@ Command executed:
 free -h
 ```
 
-* Total RAM: **[Fill in from terminal output]**
-* Used RAM: **[Fill in from terminal output]**
-* Available RAM: **[Fill in from terminal output]**
+* Total RAM: **1.9 GiB**
+* Used RAM: **419 MiB**
+* Free RAM: **1.1 GiB**
+* Available RAM: **1.4 GiB**
 
 ## Root Disk Storage
 
@@ -24,10 +25,12 @@ Command executed:
 df -h /
 ```
 
-* Root filesystem: **[Fill in from terminal output]**
-* Total storage capacity: **[Fill in from terminal output]**
-* Used storage: **[Fill in from terminal output]**
-* Available storage: **[Fill in from terminal output]**
+* Root filesystem: **/dev/vda1**
+* Total storage capacity: **19G**
+* Used storage: **5.5G**
+* Available storage: **13G**
+* Disk usage: **30%**
+* Mount point: **/**
 
 ## Why Disk Space Monitoring Is Important
 
