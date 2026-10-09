@@ -10,7 +10,9 @@ docker logs client-website
 
 ### HTTP 404 Error Log
 
-Paste the exact log line showing the HTTP 404 response here after inspecting the terminal output.
+```text
+172.17.0.1 - - [09/Oct/2026:01:27:09 +0000] "GET /hidden-admin-page HTTP/1.1" 404 153 "-" "curl/8.5.0" "-"
+```
 
 ### Why Application Logs Matter
 
@@ -24,12 +26,10 @@ Command executed:
 docker stats
 ```
 
-Record the values shown for the `client-website` container.
-
 * Container name: `client-website`
 * CPU usage: **[Fill in from docker stats]**
 * Memory usage: **[Fill in from docker stats]**
-* Network I/O: **[Optional: record the displayed value]**
+* Network I/O: **[Fill in from docker stats]**
 
 ### Logs vs. Metrics
 
