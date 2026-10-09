@@ -27,9 +27,13 @@ docker stats
 ```
 
 * Container name: `client-website`
-* CPU usage: **[Fill in from docker stats]**
-* Memory usage: **[Fill in from docker stats]**
-* Network I/O: **[Fill in from docker stats]**
+* CPU usage: **0.00%**
+* Memory usage: **2.746 MiB**
+* Memory limit: **1.859 GiB**
+* Memory usage percentage: **0.14%**
+* Network I/O: **3.96 kB / 5.42 kB**
+* Block I/O: **0 B / 12.3 kB**
+* PIDs: **2**
 
 ### Logs vs. Metrics
 
